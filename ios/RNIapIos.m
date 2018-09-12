@@ -356,6 +356,7 @@ RCT_EXPORT_METHOD(finishTransaction) {
   return @{
     @"productId" : product.productIdentifier,
     @"price" : [product.price stringValue],
+    @"priceLocale" : product.priceLocale,
     @"currency" : currencyCode,
     @"type": itemType,
     @"title" : product.localizedTitle ? product.localizedTitle : @"",
